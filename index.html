@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Bienvenido a MyCompany</h1>
+
+    <p>Necesitas enrolarte con el SII para emitir</p>
+
+    <button onclick="onOpenWidget()">Comenzar</button>
+
+    <script src="https://enrollment-widget-dev.nubox.com/bundle.js"></script>
+
+    <script>
+      const widget = NuboxWidget.create({
+        publicKey:
+          "public-key-provided-by-nubox",
+        externalCompanyId: "company-id", // company id on your system
+        identificationCompanyValue: "11111111-1", // company rut
+        onSuccess: (data) => {
+          console.log("data", data);
+        },
+        onExit: (error) => {
+          if (error) {
+            console.log("error", error);
+          } else {
+            console.log("no error");
+          }
+        },
+        onEvent: (event, payload) => {
+          if (event === "some-event") {
+            console.log("do something", payload);
+          }
+        },
+      });
+
+      function onOpenWidget() {
+        widget.open();
+      }
+    </script>
+  </body>
+</html>
