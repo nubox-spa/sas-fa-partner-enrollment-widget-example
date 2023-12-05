@@ -1,25 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My company</title>
+    <title>Dentalink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Bienvenido a MyCompany</h1>
-
-    <p>Necesitas enrolarte con el SII para emitir</p>
-
-    <button onclick="onOpenWidget()">Comenzar</button>
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/8IZfonnOG8x
+-->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <div class="bg-[#00a2e8] p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <span
+            class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"
+            src="/placeholder.svg?height=40&amp;width=40"
+          ></span>
+          <h1 class="text-white font-bold text-lg">Pamela Flores</h1>
+        </div>
+        <div class="flex space-x-2">
+          <button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-secondary/80 h-10 px-4 py-2 bg-[#ffcc00] text-black"
+          >
+            Alertas médicas</button
+          ><button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-secondary/80 h-10 px-4 py-2 bg-[#ffcc00] text-black"
+          >
+            Enfermedades</button
+          ><button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-secondary/80 h-10 px-4 py-2 bg-[#ffcc00] text-black"
+          >
+            Medicamentos
+          </button>
+        </div>
+      </div>
+      <div class="bg-[#f2f2f2] p-4 flex justify-between items-center">
+        <div class="flex space-x-4">
+          <button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+          >
+            Datos Personales</button
+          ><button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+          >
+            Ficha Clínica</button
+          ><button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+          >
+            Planes de tratamiento</button
+          ><button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+          >
+            Facturación y Pagos
+          </button>
+        </div>
+        <div class="flex space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="text-gray-500"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path></svg
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="text-gray-500"
+          >
+            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="text-gray-500"
+          >
+            <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path>
+            <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+            <path d="M12 2v2"></path>
+            <path d="M12 22v-2"></path>
+            <path d="m17 20.66-1-1.73"></path>
+            <path d="M11 10.27 7 3.34"></path>
+            <path d="m20.66 17-1.73-1"></path>
+            <path d="m3.34 7 1.73 1"></path>
+            <path d="M14 12h8"></path>
+            <path d="M2 12h2"></path>
+            <path d="m20.66 7-1.73 1"></path>
+            <path d="m3.34 17 1.73-1"></path>
+            <path d="m17 3.34-1 1.73"></path>
+            <path d="m11 13.73-4 6.93"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="flex justify-between">
+          <div class="flex flex-col space-y-2">
+            <div class="text-sm font-semibold">Presupuesto total</div>
+            <div class="text-xl font-bold text-[#00a2e8]">$149.49</div>
+            <div class="text-sm">Descuento comercial</div>
+            <div class="text-sm">10%</div>
+            <div class="flex items-center">
+              <div class="h-2 w-24 bg-[#00a2e8] rounded-full mr-2"></div>
+              <div class="text-sm">$49.00</div>
+            </div>
+            <div class="flex items-center">
+              <div class="h-2 w-20 bg-[#00a2e8] rounded-full mr-2"></div>
+              <div class="text-sm">$30.00</div>
+            </div>
+            <div class="flex items-center">
+              <div class="h-2 w-16 bg-[#00a2e8] rounded-full mr-2"></div>
+              <div class="text-sm">$25.00</div>
+            </div>
+            <div class="flex items-center">
+              <div class="h-2 w-28 bg-green-500 rounded-full mr-2"></div>
+              <div class="text-sm">$100.00</div>
+            </div>
+            <button
+              onclick="onOpenWidget()"
+              class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-4"
+            >
+              Emitir Boleta
+            </button>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <div class="flex items-center justify-center space-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-red-500"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12h8"></path></svg
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-green-500"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12h8"></path>
+                <path d="M12 8v8"></path>
+              </svg>
+            </div>
+            <div class="grid grid-cols-8 gap-2"></div>
+            <div class="grid grid-cols-8 gap-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://enrollment-widget-dev.nubox.com/bundle.js"></script>
 
     <script>
       const widget = NuboxWidget.create({
         publicKey:
-          "public-key-provided-by-nubox",
-        externalCompanyId: "company-id", // company id on your system
-        identificationCompanyValue: "11111111-1", // company rut
+          "NP_PUBLIC_DEV_Zl0jJSW04J.Q3NjeuFcktL7PXBk0wVBy/rWfGMwTJuCRmIlD/yTFU76FOH0A0Eg65m4bkjP1MRGkMFPX1zAFV8tEcRZ",
+        externalCompanyId: "company-id-test-k6",
+        identificationCompanyValue: "11111111-1",
         onSuccess: (data) => {
           console.log("data", data);
         },
