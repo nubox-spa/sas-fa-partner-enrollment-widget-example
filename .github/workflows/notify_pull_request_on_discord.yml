@@ -1,0 +1,11 @@
+name: notify_pull_request_on_discord
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  notify-on-discord:
+    uses: nubox-spa/cl-platform-reusable-actions/.github/workflows/notify_pull_request_on_discord.yml@master
+    secrets:
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
